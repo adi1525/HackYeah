@@ -49,7 +49,7 @@ namespace BoshGUI.Blocks {
 
 		public byte GetBlockId () => 3;
 
-		public int GetBlockData () => valBox.Text == null ? 0 : int.Parse (valBox.Text);
+		public int GetBlockData () => valBox.Text == "" ? 0 : int.Parse (valBox.Text);
 		public UserControl control;
 
 		public UserControl parent;
