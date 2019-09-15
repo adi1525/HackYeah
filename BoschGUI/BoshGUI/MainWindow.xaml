@@ -1,0 +1,29 @@
+﻿<Window x:Class="BoshGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BoshGUI"
+        xmlns:blocks="clr-namespace:BoshGUI.Blocks"
+        mc:Ignorable="d"
+        Title="Weeee move. You win." Height="1057" Width="950" ResizeMode="NoResize" WindowState="Maximized">
+    <Grid Background="#FF4D4D4D">
+        <Button Content="TURN" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="190" Height="120" FontFamily="Consolas" FontSize="36" Click="Button_Click"/>
+        <Button Content="STOP" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Width="190" Height="120" FontFamily="Consolas" FontSize="36" Click="Button_Click_1"/>
+        <Button Content="SPEED" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="190" Height="120" FontFamily="Consolas" FontSize="36" Click="Button_Click_2"/>
+        <Button Content="PAUSE" HorizontalAlignment="Left" Margin="10,475,0,0" VerticalAlignment="Top" Width="190" Height="120" FontFamily="Consolas" FontSize="36" Click="Button_Click_3"/>
+        <Button Content="BASE" HorizontalAlignment="Left" Margin="10,600,0,0" VerticalAlignment="Top" Width="190" Height="120" FontFamily="Consolas" FontSize="36" Click="Button_Click_4"/>
+        <Button Content="RESTART PROGRAM" Margin="599,105,14,0" VerticalAlignment="Top" Height="120" FontFamily="Consolas" FontSize="36" Click="Button_Click_Compile" Background="#FF96FF5A"/>
+        <ScrollViewer HorizontalAlignment="Left" Margin="231,60,0,20" Width="300" VerticalScrollBarVisibility="Auto" Grid.RowSpan="2">
+            <Grid x:Name="master" Focusable="True"/>
+        </ScrollViewer>
+        <Button Content="RESET CYCLE" Margin="599,586,14,0" VerticalAlignment="Top" Height="54" FontFamily="Consolas" FontSize="36" Click="Button_Click_DeleteAll" RenderTransformOrigin="0.504,1.084" Background="Red"/>
+        <Line x:Name="line" HorizontalAlignment="Left" Margin="588,30,0,30" Width="5" Y2="{Binding ActualHeight, ElementName=line, Mode=OneWay}" Fill="Black" Stroke="Black" Grid.RowSpan="2"/>
+        <Line HorizontalAlignment="Left" Margin="220,30,0,30" Width="5" Y2="{Binding ActualHeight, ElementName=line, Mode=OneWay}" Fill="Black" Stroke="Black" Grid.RowSpan="2"/>
+        <Button Content="ABORT PROGRAM" Margin="599,244,14,0" VerticalAlignment="Top" Height="83" FontFamily="Consolas" FontSize="36" Click="Button_Click_DeleteAll" RenderTransformOrigin="0.504,1.084" Background="#FFFFFF5C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="BLOCKS" VerticalAlignment="Top" Foreground="#FFEAEAEA" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="231,12,0,0" TextWrapping="Wrap" Text="CYCLE" VerticalAlignment="Top" Foreground="#FFEAEAEA" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="608,10,0,0" TextWrapping="Wrap" Text="OPTIONS" VerticalAlignment="Top" Foreground="#FFEAEAEA" FontSize="36"/>
+
+    </Grid>
+</Window>
